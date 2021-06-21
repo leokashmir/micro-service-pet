@@ -18,16 +18,16 @@ A aplicação esta sendo executada no Heroku, pode ser que em algum momento ela 
 ## Serviços
 
 
-| Metodo |   End-Point  						  | Descrição                                                                  |  
-|--------|---------------------------------------------------------------------------------------------------------------------|
-|POST    | /v1/api/petz/save                      | Cria o Cadastro do Cliente juntamente com seu(s) Pets                      |
-|POST    | /v1/api/petz/save/{idCliente}/pet	  | Cria ou Atualiza o cadastro do Pet.                                        |
-|GET     | /v1/api/petz/listar/{idCliente}/pets   | Obtém a informação de um Cliente e seus Pets, através do IdCliente .       | 
-|GET     | /v1/api/petz/search/cliente/{celular}/ | Obtém a informação de um Cliente e seus Pets, através do número do celular |
-|GET     | /v1/api/petz/listar/clientes			  | Obtém a lista de todos os clientes e seus pets. 						   |
-|DELETE  | /v1/api/petz/delete/cliente/{id}       | Exclui o Cadastro do Cliente. 											   |
-|DELETE  | /v1/api/petz/delete/pet/{id}           | Exclui o Cadastro do pet. 												   |
-|PUT     | /v1/api/petz/update/cliente            | Atualiza o Cadastro do Cliente.											   |
+| Metodo  |   End-Point  						  | Descrição                                                                  |  
+|---------|---------------------------------------------------------------------------------------------------------------------|
+| POST    | /v1/api/petz/save                      | Cria o Cadastro do Cliente juntamente com seu(s) Pets                      |
+| POST    | /v1/api/petz/save/{idCliente}/pet	  | Cria ou Atualiza o cadastro do Pet.                                        |
+| GET     | /v1/api/petz/listar/{idCliente}/pets   | Obtém a informação de um Cliente e seus Pets, através do IdCliente .       | 
+| GET     | /v1/api/petz/search/cliente/{celular}/ | Obtém a informação de um Cliente e seus Pets, através do número do celular |
+| GET     | /v1/api/petz/listar/clientes			  | Obtém a lista de todos os clientes e seus pets. 						   |
+| DELETE  | /v1/api/petz/delete/cliente/{id}       | Exclui o Cadastro do Cliente. 											   |
+| DELETE  | /v1/api/petz/delete/pet/{id}           | Exclui o Cadastro do pet. 												   |
+| PUT     | /v1/api/petz/update/cliente            | Atualiza o Cadastro do Cliente.											   |
 
 
 
