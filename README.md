@@ -18,9 +18,9 @@ A aplicação esta sendo executada no Heroku, pode ser que em algum momento ela 
 ## Serviços
 
 
-| Metodo  |   End-Point  						  | Descrição                                                                  |  
-|---------|--------------------------------------------------------------------------------------------------------|
-| POST    | /v1/api/petz/save                      | Cria o Cadastro do Cliente juntamente com seu(s) Pets         |
+| Metodo  |   End-Point  | Descrição   |  
+|---------|-----------------------------|
+| POST    | /v1/api/petz/save  | Cria o Cadastro do Cliente juntamente com seu(s) Pets   |
 
 
   
