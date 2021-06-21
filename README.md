@@ -31,10 +31,8 @@ A aplicação esta sendo executada no Heroku, pode ser que em algum momento ela 
 
 
 
-## Testes:
-
-Swagger Link:
-https://petz.herokuapp.com/swagger-ui.html
+## Link para o Swagger
+https://micro-service-pet-app.herokuapp.com/swagger-ui.html
 
 
  **Contato**
