@@ -18,13 +18,13 @@ A aplicação esta sendo executada no Heroku, pode ser que em algum momento ela 
 ## Serviços
 
 
+| Metodo  |   End-Point  						  | Descrição                                                                  |  
+|---------|--------------------------------------------------------------------------------------------------------|
+| POST    | /v1/api/petz/save                      | Cria o Cadastro do Cliente juntamente com seu(s) Pets         |
 
 
   
-| Componente  |  Versão  | Data     |
-| ------------| ---------|----------|
-|  AppClient  |  1.0     | 26/05/20 |
-|  AppServer  |  1.1     | 02/06/20 |
+
 
 ## Link para o Swagger
 https://micro-service-pet-app.herokuapp.com/swagger-ui.html
