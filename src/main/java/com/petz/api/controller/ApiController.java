@@ -41,8 +41,8 @@ public class ApiController {
             @ApiResponse(code = 404, message = "O recurso solicitado não existe ou não foi implementado"),
             @ApiResponse(code = 405, message = "Recurso com um método não suportado"),
             @ApiResponse(code = 500, message = "Ocorreu um erro no gateway da API ou no microsserviço")})
-    @GetMapping("/search/cliente/{celular}/")
-    public ResponseEntity<Cliente> getClientAndPetByCelular(@PathVariable  String celular) throws GenericException {
+    @GetMapping("/search/cliente/{celular}")
+    public ResponseEntity<Cliente> getClientAndPetByCelular(@PathVariable("celular")  String celular) throws GenericException {
         return ResponseEntity.ok(service.findByCelular(celular));
 
     }
@@ -68,7 +68,7 @@ public class ApiController {
             @ApiResponse(code = 405, message = "Recurso com um método não suportado"),
             @ApiResponse(code = 500, message = "Ocorreu um erro no gateway da API ou no microsserviço")})
     @GetMapping("/listar/{idCliente}/pets")
-    public ResponseEntity<Cliente> getClienteAndPetByIdClient( @PathVariable  Long idCliente ) throws GenericException {
+    public ResponseEntity<Cliente> getClienteAndPetByIdClient( @PathVariable("idCliente")  Long idCliente ) throws GenericException {
         return ResponseEntity.ok(service.findByCdCliente(idCliente));
     }
 
@@ -93,7 +93,7 @@ public class ApiController {
             @ApiResponse(code = 405, message = "Recurso com um método não suportado"),
             @ApiResponse(code = 500, message = "Ocorreu um erro no gateway da API ou no microsserviço")})
     @PostMapping("/save/{idCliente}/pet")
-    public ResponseEntity<Pet> savePet(@RequestBody PetDto pet, @PathVariable Long idCliente) throws GenericException {
+    public ResponseEntity<Pet> savePet(@RequestBody PetDto pet, @PathVariable("idCliente") Long idCliente) throws GenericException {
         return ResponseEntity.ok(service.saveOrUpdatePet(pet, idCliente));
     }
 
@@ -118,7 +118,7 @@ public class ApiController {
             @ApiResponse(code = 405, message = "Recurso com um método não suportado"),
             @ApiResponse(code = 500, message = "Ocorreu um erro no gateway da API ou no microsserviço")})
     @DeleteMapping("/delete/cliente/{id}")
-    public ResponseEntity<String> deleteCliente(@PathVariable Long id) throws GenericException {
+    public ResponseEntity<String> deleteCliente(@PathVariable("id") Long id) throws GenericException {
         service.deleteCliente(id);
         return  ResponseEntity.ok(EXCLUSAO);
     }
@@ -131,7 +131,7 @@ public class ApiController {
             @ApiResponse(code = 405, message = "Recurso com um método não suportado"),
             @ApiResponse(code = 500, message = "Ocorreu um erro no gateway da API ou no microsserviço")})
     @DeleteMapping("/delete/pet/{id}")
-    public ResponseEntity<String> deletePet(@PathVariable Long id) throws GenericException {
+    public ResponseEntity<String> deletePet(@PathVariable("id") Long id) throws GenericException {
         service.deletePet(id);
         return  ResponseEntity.ok(EXCLUSAO);
     }
